@@ -125,7 +125,7 @@ class Bot:
 
     def _likePhoto(self, max):
         self._waitClassName("fr66n")  # wait for fill window by Instagram
-        heart = self.driver.find_elements_by_class_name("_8-yf5 ")[3]
+        heart = self.driver.find_elements_by_class_name("_8-yf5 ")[4]
         heart_button = self.driver.find_elements_by_class_name("wpO6b")[0]
         likes = findall("\d+", str(self.driver.find_element_by_class_name("EDfFK").text))
 
@@ -191,4 +191,3 @@ class Bot:
             print(f"{i + 1}. {account} {likes} likes")
             if i > 9:
                 break
-
